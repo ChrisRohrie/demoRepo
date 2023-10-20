@@ -1,3 +1,4 @@
+/*
 let myAge = 39
 let humanDogRatio = 7
 let myDogAge = myAge * humanDogRatio
@@ -11,6 +12,7 @@ bonusPoints = bonusPoints - 75
 console.log(bonusPoints)
 bonusPoints = bonusPoints + 45
 console.log(bonusPoints)
+*/
 
 // need a count variable
 // listen for clicks on button
@@ -26,6 +28,10 @@ function increment() {
 }
 
 function reset() {
-    count = 0;
+    count = 0
     countEl.innerText = count
+}
+
+function save() {
+    console.log(count)
 }
