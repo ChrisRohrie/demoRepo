@@ -21,6 +21,8 @@ console.log(bonusPoints)
 
 let count = 0;
 let countEl = document.getElementById("count-el")
+let saveEl = document.getElementById("save-el")
+let saveOut = "Previous saves: "
 
 function increment() {
     count +=1
@@ -34,4 +36,7 @@ function reset() {
 
 function save() {
     console.log(count)
+    saveOut = saveOut + count + " - "
+    saveEl.innerText = saveOut
+    reset()
 }
